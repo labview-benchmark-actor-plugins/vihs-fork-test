@@ -1,0 +1,48 @@
+{
+  "source": "gitlab.com/svelderrainruiz/mprr",
+  "tag": "v0.1.1",
+  "hashing": "sha256 of the file with CRLF normalized to LF, so Windows checkouts verify too",
+  "note": "Byte-identical to the upstream files at the tag when recorded. tools/tdms is vi-history-suite-owned: when a copy is edited on purpose, update its sha256 here and say why in tools/tdms/README.md.",
+  "files": [
+    {
+      "path": "tools/tdms/review-capture-transport-core/ReviewCaptureTransportCore.csproj",
+      "upstreamPath": "tools/review-capture-transport-core/ReviewCaptureTransportCore.csproj",
+      "sha256": "12985a174dc55d6f519f2205bf7b35d0123d6d7dfa7fe3fe34f2f3028ba30604"
+    },
+    {
+      "path": "tools/tdms/review-capture-transport-core/TransportCore.cs",
+      "upstreamPath": "tools/review-capture-transport-core/TransportCore.cs",
+      "sha256": "ae6f2e3ac3e08ee5dbda306a3652aae78a5d66b574fcc8f4fb9cdd35e861fc55"
+    },
+    {
+      "path": "tools/tdms/review-capture-transport-core/DualPacketTransport.cs",
+      "upstreamPath": "tools/review-capture-transport-core/DualPacketTransport.cs",
+      "sha256": "cbfb3f0cd080bfefdd9250cb55e275b649b2c9ee9020b7ab34fa803f135eb6dd"
+    },
+    {
+      "path": "tools/tdms/review-capture-transport-core/TransportReplayProjection.cs",
+      "upstreamPath": "tools/review-capture-transport-core/TransportReplayProjection.cs",
+      "sha256": "0ee193ec5d82712e6aa9a7cd1762add0dd5f147d25af25d70eedba052b1d2762"
+    },
+    {
+      "path": "tools/tdms/review-capture-dual-packet-self-test-writer/ReviewCaptureDualPacketSelfTestWriter.csproj",
+      "upstreamPath": "tools/review-capture-dual-packet-self-test-writer/ReviewCaptureDualPacketSelfTestWriter.csproj",
+      "sha256": "ffb77f4f3eec757a1e60653f9ebfa796e4f558f8180c30f004341b7af73e1f7f"
+    },
+    {
+      "path": "tools/tdms/review-capture-dual-packet-self-test-writer/Program.cs",
+      "upstreamPath": "tools/review-capture-dual-packet-self-test-writer/Program.cs",
+      "sha256": "af8c5608f011fd2e04b97f3fc08e7dfe240c90c62e5861105c6447ff4fb74dff"
+    },
+    {
+      "path": "tools/tdms/review-capture-windows-zero-copy-packet-harness-generator/ReviewCaptureWindowsZeroCopyPacketHarnessGenerator.csproj",
+      "upstreamPath": "tools/review-capture-windows-zero-copy-packet-harness-generator/ReviewCaptureWindowsZeroCopyPacketHarnessGenerator.csproj",
+      "sha256": "ffb77f4f3eec757a1e60653f9ebfa796e4f558f8180c30f004341b7af73e1f7f"
+    },
+    {
+      "path": "tools/tdms/review-capture-windows-zero-copy-packet-harness-generator/Program.cs",
+      "upstreamPath": "tools/review-capture-windows-zero-copy-packet-harness-generator/Program.cs",
+      "sha256": "aaf2b4a30c3e10e2234f841547838bd50f3ae823fa55324027c2da1a97afd2dd"
+    }
+  ]
+}

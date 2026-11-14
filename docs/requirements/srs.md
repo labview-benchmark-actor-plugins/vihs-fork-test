@@ -6128,6 +6128,7 @@ Missing numeric IDs are intentional.
   - `tests/unit/perStateRunAnalytics.test.ts`
   - `tests/unit/crossRuntimePerfDiff.test.ts`
   - `tests/unit/labviewLaunchTiming.test.ts`
+  - `tests/unit/mprrSharedContract.test.ts`
 - Change Guidance:
   - This is a governance-foundation requirement: keep the documented invariants
     (human/Vagrant-only authorship, run-only container, Vagrant→`merge_group`
@@ -6301,6 +6302,7 @@ Missing numeric IDs are intentional.
   - `tests/unit/mprrStripImageDecoder.test.ts`
   - `tests/unit/stopwatchCaptureAccuracy.test.ts`
   - `tests/unit/mprrStopwatchSurfaceRenderer.test.ts`
+  - `tests/unit/mprrSharedContract.test.ts`
 - Change Guidance:
   - Evolve the diagnostics contract additively (schema id
     `vi-history-suite/labview-container-diagnostics@v1`); add new staged checks at
