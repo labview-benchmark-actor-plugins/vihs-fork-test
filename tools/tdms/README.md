@@ -37,6 +37,21 @@ DOTNET_ROLL_FORWARD=Major dotnet \
   --output-dir <out> --attempt-id <id> --frame-count 8 --frame-interval-milliseconds 50
 ```
 
+## Upstream provenance and shared contract
+
+The copies stay vi-history-suite-owned and have no runtime dependency on mprr. What is pinned is where they
+came from and the contract they must keep:
+
+- `provenance.json` records the mprr tag the copies came from (`v0.1.1`, `gitlab.com/svelderrainruiz/mprr`)
+  and a SHA-256 for each copied `.cs` / `.csproj` file, hashed with CRLF normalized to LF. At the time of
+  recording, every file was byte-identical to upstream. Editing a copy on purpose is fine: update its hash
+  there and note why here.
+- `contract/mprr-shared-contract.v1.json` is vendored byte-for-byte from that tag. `contract/pin.json` holds
+  its SHA-256, and `.gitattributes` keeps it byte-exact on Windows.
+- `tests/unit/mprrSharedContract.test.ts` checks the pin and the provenance hashes. It also checks the
+  `TicksPerMillisecond` and `BlockDurationMilliseconds` literals in the harness generator, and the constants
+  and three-block capacity behaviour of `src/reporting/mirror/deterministicRollingBlockRing.ts`.
+
 ## Decoupling proof
 
 With identical inputs the vendored infrastructure emits **byte-identical** TDMS to
