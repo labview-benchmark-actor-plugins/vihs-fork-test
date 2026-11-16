@@ -4,6 +4,14 @@ This changelog records user-facing release history for `vi-history-suite`.
 
 ## [Unreleased]
 
+### Added
+
+- Adopt the repo-standards-review consumer kit at RSR v0.6.0 (VITechnologies/projectbuddy#332). Executable
+  scripts under `scripts`, `src/cli`, `vagrant`, `.tools/bin`, the testing-automation skill and the vendored
+  VIDiff reference check out with LF on every platform, and the vendored mprr contract stays byte-exact. A new
+  workflow runs the kit's check, which pins RSR to its published release manifest. The repository's own
+  `.gitattributes` rules follow the kit's closing line.
+
 ### Fixed
 
 - The independent dev-tools release payload now ships the compiled MCP server's

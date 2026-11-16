@@ -1,3 +1,31 @@
+# Managed by the repo-standards-review consumer kit (templates/consumer). Change
+# the answers in .cruft.json and run `cruft update` rather than editing these
+# rules. Add repository-specific rules below the closing line; cruft keeps them.
+#
+# Executable scripts check out with LF on every platform, including Windows with
+# core.autocrlf=true, because a CR breaks their interpreter line. text=auto
+# leaves binary files in script directories untouched.
+*.sh text eol=lf
+.githooks/** text=auto eol=lf
+githooks/** text=auto eol=lf
+git-hooks/** text=auto eol=lf
+.husky/** text=auto eol=lf
+.repo-standards-review/** text eol=lf
+# The kit's root files keep LF too, so a tree that is hashed or packaged has the
+# same bytes on every platform.
+.repo-standards-review.json text eol=lf
+.cruft.json text eol=lf
+scripts/** text=auto eol=lf
+src/cli/** text=auto eol=lf
+vagrant/** text=auto eol=lf
+.tools/bin/** text=auto eol=lf
+.github/skills/testing-automation/scripts/** text=auto eol=lf
+resources/labview-cli-operations/vidiff/** text=auto eol=lf
+# Byte-provenance files keep their exact bytes, whatever the rules above say.
+tools/tdms/contract/mprr-shared-contract.v1.json -text
+# End of the repo-standards-review consumer-kit rules.
+
+# Repository-specific rules (kept by cruft below the kit's closing line).
 *.sh text eol=lf
 
 # Vendored NI VIDiff orchestration reference (byte-for-byte from upstream, a
