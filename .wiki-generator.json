@@ -1,8 +1,9 @@
 {
   "schema": "rsr/wiki-generator-config@1",
-  "repoUrl": "https://github.com/svelderrainruiz/vi-history-suite",
+  "repoUrl": "https://github.com/labview-benchmark-actor-plugins/vihs-fork-test",
   "branch": "develop",
-  "wikiTitle": "vi-history-suite Wiki",
+  "description": "This is a test fork: fork-and-wiki validation, throwaway.",
+  "wikiTitle": "vi-history-suite Wiki (test fork)",
   "docs": "docs",
   "srs": { "path": "requirements/srs.md", "style": "blocks" },
   "rtm": { "path": "requirements/rtm.csv", "idColumn": "ReqID", "columns": ["Status", "Area"] },
